@@ -1,0 +1,275 @@
+@font-face {
+    font-family:'amoria';
+    src: url('fonts/AMORIA.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'decterm';
+    src: url('fonts/_decterm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 350px 1fr 100px;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 10rem;
+    font-family:'amoria';
+    font-weight: 100;
+    margin: 0%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-family:'amoria';
+    font-weight: lighter;
+    margin: 0px 0px 10px 0px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-family:'amoria';
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 60px;
+    font-family:'decterm';
+    font-weight: lighter;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: 'amoria';
+    font-weight: 100;
+    color: white;
+}
+
+header {
+    background-color: black;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    color: white;
+    font-family:'decterm';
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black
+}
+
+ul li a:active {
+    background-color: black;
+    color: white;
+}
+
+main {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+footer {
+    background-color: black;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#members {
+    background-image: url('images/membersbg.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1px 0px 100px 0px;
+}
+
+.members-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family:'decterm';
+    font-weight: 400;
+}
+
+.members-gallery img {
+    max-width: 250px;
+    height: auto;
+    width: auto;
+}
+
+#music-sis {
+    background-color: #e6daeb;
+    padding: 5px 0px 40px 0px;
+}
+
+.sis-album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.sis-album img {
+    max-height: 500px;
+    width: auto;
+}
+
+.sis-tracks {
+    font-size: 40px;
+    font-family:'decterm';
+    font-weight: 200;
+    padding: 80px 0px 10px 50px;
+    color: #bb90ce;
+}
+
+.music-chaos {
+    background-color: #343460;
+    padding: 80px 0px 40px 0px;
+}
+
+.chaos-album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.chaos-album img {
+    max-height: 500px;
+    height: auto;
+    width: auto;
+}
+
+.chaos-tracks {
+    font-size: 40px;
+    font-family:'decterm';
+    font-weight: 200;
+    padding: 90px 50px 10px 50px;
+    color: #7272cc;
+}
+
+#campaigns-header {
+    background-image: url('images/membersbg.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5px 0px 40px 0px;
+}
+
+.campaigns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family:'decterm';
+    font-weight: 200;
+}
+
+.campaigns img {
+    max-height: 300px;
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .members-gallery {
+        flex-direction: column;
+    }
+
+    .members-gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sis-album {
+        flex-direction: column;
+    }
+
+    .sis-album img {
+        width: 100%;
+        height: auto;
+    }
+
+    .chaos-album {
+        flex-direction: column;
+    }
+
+    .chaos-album img {
+        width: 100%;
+        height: auto;
+    }
+
+    .campaigns {
+        flex-direction: column;
+    }
+
+    .campaigns img {
+        max-width: 100%;
+        height: auto;
+    }
+}
