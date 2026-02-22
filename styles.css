@@ -8,7 +8,7 @@
 
 @font-face {
     font-family:'decterm';
-    src: url('fonts/_decterm.ttf') format('truetype');
+    src: url('fonts/decterm.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -272,4 +272,5 @@ footer {
         max-width: 100%;
         height: auto;
     }
+
 }
