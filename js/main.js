@@ -31,7 +31,6 @@ const list = function() {
     arrayOfNotes.forEach(item => {
         console.log(item);
     })
-
 };
 
 const remove = function(index) {
