@@ -18,6 +18,7 @@ const avgres = avg(2, 3, 4, 5)
 console.log(avgres);
 
 const arrayOfNotes = [];
+let id = 0;
 
 const add = function(text, priority) {
     arrayOfNotes.push({
@@ -28,9 +29,7 @@ const add = function(text, priority) {
 };
 
 const list = function() {
-    arrayOfNotes.forEach(item => {
-        console.log(item);
-    })
+    arrayOfNotes.forEach(item => console.log(item));
 };
 
 const remove = function(index) {
