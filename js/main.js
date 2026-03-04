@@ -17,7 +17,7 @@ function avg(...args) {
 const avgres = avg(2, 3, 4, 5)
 console.log(avgres);
 
-const arrayOfNotes = {};
+const arrayOfNotes = [];
 
 const add = function(text, priority) {
     arrayOfNotes.push({
