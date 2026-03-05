@@ -35,3 +35,11 @@ const list = function() {
 const remove = function(index) {
 
 };
+
+const totalnotes = function() {
+    return arrayOfNotes.length;
+}
+
+const removelast = function() {
+    arrayOfNotes.pop()
+}
