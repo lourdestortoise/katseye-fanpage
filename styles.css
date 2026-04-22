@@ -242,7 +242,7 @@ footer {
     }
 
     .members-gallery img {
-        width: 100%;
+        width: auto;
         height: auto;
     }
 
@@ -251,7 +251,7 @@ footer {
     }
 
     .sis-album img {
-        width: 100%;
+        width: auto;
         height: auto;
     }
 
@@ -260,7 +260,7 @@ footer {
     }
 
     .chaos-album img {
-        width: 100%;
+        width: auto;
         height: auto;
     }
 
@@ -269,7 +269,7 @@ footer {
     }
 
     .campaigns img {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
     }
 
