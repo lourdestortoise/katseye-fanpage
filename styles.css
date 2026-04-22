@@ -228,7 +228,7 @@ footer {
     width: auto;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 350px) {
     html {
         font-size: 12px;
     }
